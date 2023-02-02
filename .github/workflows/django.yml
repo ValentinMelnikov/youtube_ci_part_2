@@ -21,6 +21,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install Dependencies
       run: |
+        git --version
         python3 -m venv ./venv
         . venv/bin/activate
         pip install -r requirements.txt
